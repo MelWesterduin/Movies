@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script defer type="text/javascript" src="movies.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+    <title>Filmzoeker</title>
+  </head>
+  <header>
+    <h4>Welkom bij de Winc Filmzoeker</h4>
+    <nav>
+      <input
+        type="radio"
+        id="latest-movies"
+        name="movies-filter"
+        value="new-movies"
+      />
+      <label for="latest-movies">Nieuwste films (2014 of nieuwer)</label>
+
+      <input
+        type="radio"
+        id="avengers"
+        name="movies-filter"
+        value="avenger-movies"
+      />
+      <label for="avengers">Avengers</label>
+
+      <input type="radio" id="x-men" name="movies-filter" value="xmen-movies" />
+      <label for="x-men">X-Men </label>
+
+      <input
+        type="radio"
+        id="princess"
+        name="movies-filter"
+        value="princess-movies"
+      />
+      <label for="princess">Princess </label>
+
+      <input
+        type="radio"
+        id="batman"
+        name="movies-filter"
+        value="batman-movies"
+      />
+      <label for="batman">Batman </label>
+
+      <label for="search" class="search-label">Zoek hier</label>
+      <input type="search" id="search" name="search-filter" />
+    </nav>
+  </header>
+
+  <body>
+    <main id="movie-selection">
+      <ul id="list-of-movies"></ul>
+    </main>
+  </body>
+</html>
